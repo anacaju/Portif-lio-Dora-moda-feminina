@@ -9,6 +9,11 @@ export function getSiteMetadata(): Metadata {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     keywords: siteConfig.seo.keywords,
+    icons: {
+      icon: "/icon.svg",
+      shortcut: "/icon.svg",
+      apple: "/icon.svg"
+    },
     alternates: {
       canonical
     },
