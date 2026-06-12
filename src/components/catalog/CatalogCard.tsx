@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { layoutConfig } from "@/config/layout.config";
 import { siteConfig } from "@/config/site.config";
@@ -20,8 +21,13 @@ const aspectClasses: Record<NonNullable<CatalogItem["aspect"]>, string> = {
 };
 
 export function CatalogCard({ item, compact = false }: CatalogCardProps) {
-  const message = item.whatsappMessage ?? createCatalogItemWhatsAppMessage(item);
+  const [siteOrigin, setSiteOrigin] = useState("");
+  const message = item.whatsappMessage ?? createCatalogItemWhatsAppMessage(item, siteOrigin);
   const aspect = compact ? "aspect-[4/5]" : aspectClasses[item.aspect ?? "portrait"];
+
+  useEffect(() => {
+    setSiteOrigin(window.location.origin);
+  }, []);
 
   return (
     <article className="group overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-surface)]">

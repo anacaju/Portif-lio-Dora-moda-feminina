@@ -18,18 +18,22 @@ export function createWhatsAppLink(
 }
 
 export function createPublicAssetUrl(path: string): string {
-  if (typeof window !== "undefined" && window.location.origin) {
-    return new URL(path, window.location.origin).toString();
-  }
+  return createPublicAssetUrlForOrigin(path);
+}
 
+export function createPublicAssetUrlForOrigin(path: string, origin?: string): string {
+  const browserOrigin = typeof window !== "undefined" ? window.location.origin : "";
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? `https://${siteConfig.domain}`;
+    origin?.replace(/\/$/, "") ||
+    browserOrigin ||
+    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
+    `https://${siteConfig.domain}`;
 
   return new URL(path, `${siteUrl}/`).toString();
 }
 
-export function createCatalogItemWhatsAppMessage(item: CatalogItem): string {
-  const imageUrl = createPublicAssetUrl(item.image);
+export function createCatalogItemWhatsAppMessage(item: CatalogItem, origin?: string): string {
+  const imageUrl = createPublicAssetUrlForOrigin(item.image, origin);
   const details = [
     `Olá, vim pelo site e gostaria de consultar esta peça: ${item.name}.`,
     item.price ? `Valor: ${item.price}` : null,

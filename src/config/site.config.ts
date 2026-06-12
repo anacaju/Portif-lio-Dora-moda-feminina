@@ -17,7 +17,7 @@ export const siteConfig: SiteConfig = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3922422777086!2d-38.52813958867568!3d-3.7243481431375196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7484cee336a33%3A0x2c8bb85eed06668a!2sDora%20Moda%20Feminina%20-%20Catedral!5e0!3m2!1spt-BR!2sbr!4v1781008877844!5m2!1spt-BR!2sbr",
   mapsLink: "https://maps.app.goo.gl/gvwfYKvrbZc8UWCj9",
   wazeLink: "https://waze.com/ul?ll=-3.724134,-38.525564&navigate=yes",
-  domain: "doracatedral.com.br",
+  domain: "dora-moda.vercel.app",
   logo: "/logo.svg",
   heroImage: "/images/dora-catedral/page-14-image-02.png",
   businessHours: "Segunda a sábado, das 08h às 16h. Domingo fechado.",
