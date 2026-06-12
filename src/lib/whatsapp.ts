@@ -18,6 +18,10 @@ export function createWhatsAppLink(
 }
 
 export function createPublicAssetUrl(path: string): string {
+  if (typeof window !== "undefined" && window.location.origin) {
+    return new URL(path, window.location.origin).toString();
+  }
+
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? `https://${siteConfig.domain}`;
 

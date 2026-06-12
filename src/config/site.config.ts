@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
   heroImage: "/images/dora-catedral/page-14-image-02.png",
   businessHours: "Segunda a sábado, das 08h às 16h. Domingo fechado.",
   whatsappDefaultMessage:
-    "Olá, vim pelo catálogo da Dora e gostaria de consultar disponibilidade das peças.",
+    "Olá, vim pelo site e gostaria de consultar disponibilidade das peças.",
   content: {
     about: {
       eyebrow: "Dora",

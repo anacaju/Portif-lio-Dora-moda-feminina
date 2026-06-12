@@ -44,7 +44,7 @@ export function About() {
 
           <div className="relative overflow-hidden rounded-[26px] border border-[var(--color-primary-light)]/55 bg-[var(--color-surface)] shadow-[0_18px_40px_rgba(59,42,33,0.10)]">
             <Image
-              src="/images/dona-dora.jfif"
+              src="/images/dona-dora.jpg"
               alt="Rejane Miranda, fundadora da Dora"
               width={900}
               height={1600}
