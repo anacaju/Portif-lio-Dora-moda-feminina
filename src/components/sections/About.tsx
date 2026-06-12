@@ -48,11 +48,11 @@ export function About() {
               alt="Rejane Miranda, fundadora da Dora"
               width={900}
               height={1600}
-              className="h-[460px] w-full object-cover object-[center_18%] sm:h-[560px] lg:h-[610px]"
+              className="h-[380px] w-full object-cover object-[58%_28%] sm:h-[460px] lg:h-[520px]"
               sizes="(min-width: 1024px) 42vw, 100vw"
               priority={false}
             />
-            <div className="pointer-events-none absolute right-2 top-3 w-[132px] rounded-[14px] border border-[var(--color-primary-light)]/80 bg-[rgba(255,249,242,0.82)] p-0.5 shadow-[0_8px_18px_rgba(59,42,33,0.13)] backdrop-blur-[3px] sm:right-4 sm:top-4 sm:w-[164px]">
+            <div className="pointer-events-none absolute left-2 top-3 w-[132px] rounded-[14px] border border-[var(--color-primary-light)]/80 bg-[rgba(255,249,242,0.82)] p-0.5 shadow-[0_8px_18px_rgba(59,42,33,0.13)] backdrop-blur-[3px] sm:left-4 sm:top-4 sm:w-[164px]">
               <div className="rounded-[11px] border border-[var(--color-primary)]/35 px-2 py-1 text-center sm:px-2.5 sm:py-1.5">
                 <p className="brand-wordmark text-base font-bold leading-none text-[var(--color-primary-dark)] sm:text-lg">
                   Fundadora e CEO
