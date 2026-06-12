@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #0f172a;
+  --color-background: #ffffff;
+  --color-muted: #f8fafc;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #bfdbfe;
+  --color-accent: #2563eb;
+  --color-premium: #1e3a8a;
+  --color-footer: #0f172a;
+  --color-surface: #ffffff;
+  --radius-card: 1rem;
+  --radius-large: 2rem;
+  --section-spacing: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family), sans-serif;
+}
+
+.brand-wordmark {
+  font-family: "Bodoni 72", "Bodoni MT", Didot, "Times New Roman", serif;
+  letter-spacing: 0;
+}
+
+.catalog-price-range {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  height: 28px;
+  width: 100%;
+  appearance: none;
+  background: transparent;
+}
+
+.catalog-price-range::-webkit-slider-runnable-track {
+  height: 8px;
+  appearance: none;
+  background: transparent;
+}
+
+.catalog-price-range::-webkit-slider-thumb {
+  pointer-events: auto;
+  height: 24px;
+  width: 24px;
+  margin-top: -8px;
+  appearance: none;
+  cursor: pointer;
+  border: 4px solid var(--color-surface);
+  border-radius: 999px;
+  background: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(59, 42, 33, 0.18);
+}
+
+.catalog-price-range::-moz-range-track {
+  height: 8px;
+  background: transparent;
+}
+
+.catalog-price-range::-moz-range-thumb {
+  pointer-events: auto;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  border: 4px solid var(--color-surface);
+  border-radius: 999px;
+  background: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(59, 42, 33, 0.18);
+}
+
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

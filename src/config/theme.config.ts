@@ -1,0 +1,97 @@
+export const activeTheme = "carameloElegante" as const;
+
+export const themes = {
+  carameloElegante: {
+    primary: "#C7996F",
+    primaryDark: "#8A5E3C",
+    primaryLight: "#DDBB99",
+    secondary: "#F5E9DA",
+    background: "#FFF9F2",
+    muted: "#E8D6C2",
+    text: "#3B2A21",
+    textMuted: "#7A6758",
+    accent: "#6F7A58",
+    premium: "#7B4B43",
+    footer: "#FFF9F2",
+    surface: "#FFF9F2",
+    radius: "1rem",
+    radiusLarge: "2rem",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    sectionSpacing: "4rem"
+  },
+  varejoVibrante: {
+    primary: "#e11d48",
+    primaryDark: "#be123c",
+    primaryLight: "#fecdd3",
+    secondary: "#18181b",
+    background: "#ffffff",
+    muted: "#fff1f2",
+    text: "#18181b",
+    textMuted: "#64748b",
+    accent: "#e11d48",
+    premium: "#9f1239",
+    footer: "#18181b",
+    surface: "#ffffff",
+    radius: "1rem",
+    radiusLarge: "2rem",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    sectionSpacing: "5rem"
+  },
+  servicosConfiavel: {
+    primary: "#0f766e",
+    primaryDark: "#134e4a",
+    primaryLight: "#99f6e4",
+    secondary: "#134e4a",
+    background: "#ffffff",
+    muted: "#f0fdfa",
+    text: "#172554",
+    textMuted: "#475569",
+    accent: "#0f766e",
+    premium: "#155e75",
+    footer: "#134e4a",
+    surface: "#ffffff",
+    radius: "1rem",
+    radiusLarge: "2rem",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    sectionSpacing: "5rem"
+  },
+  gastronomiaAcolhedora: {
+    primary: "#b91c1c",
+    primaryDark: "#7f1d1d",
+    primaryLight: "#fecaca",
+    secondary: "#292524",
+    background: "#fffdf8",
+    muted: "#fef2f2",
+    text: "#292524",
+    textMuted: "#78716c",
+    accent: "#b91c1c",
+    premium: "#854d0e",
+    footer: "#292524",
+    surface: "#fffdf8",
+    radius: "1rem",
+    radiusLarge: "2rem",
+    fontFamily: "Georgia, 'Times New Roman', serif",
+    sectionSpacing: "5rem"
+  },
+  minimalista: {
+    primary: "#18181b",
+    primaryDark: "#09090b",
+    primaryLight: "#d4d4d8",
+    secondary: "#3f3f46",
+    background: "#ffffff",
+    muted: "#f4f4f5",
+    text: "#18181b",
+    textMuted: "#71717a",
+    accent: "#52525b",
+    premium: "#27272a",
+    footer: "#18181b",
+    surface: "#ffffff",
+    radius: "1rem",
+    radiusLarge: "2rem",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    sectionSpacing: "4rem"
+  }
+};
+
+export type ThemeName = keyof typeof themes;
+export const theme = themes[activeTheme];
